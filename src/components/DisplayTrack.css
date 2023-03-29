@@ -1,0 +1,9 @@
+.display{
+    background-color: brown;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.display-inner{
+    text-align: center;
+}

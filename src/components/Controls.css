@@ -1,0 +1,52 @@
+.actions{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: blueviolet; */
+    width: 120%;
+    position: relative;
+    z-index: 2;
+}
+.playerIcon{
+    font-size: 2em;
+    color: rgb(207, 207, 207);
+    transition: 0.2s;
+}
+.playerIcon:hover{
+    color: black;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    font-size: 3em;
+    color: white;
+    background: linear-gradient( 181deg,  rgba(225,109,245,1) 6.9%, rgba(78,248,231,1) 112.8% );
+    border-radius: 50%;
+    padding: 0.1em;
+    transition: 0.3s;
+}
+.main:hover{
+    filter: contrast(2);
+}
+.main:hover #play{
+    color: black;
+}
+.main:hover #pause{
+    color: black;
+}
+#play{
+    position: relative;   
+    left: 2px;
+    transition: 0.3s;
+}
+#pause{
+    transition: 0.3s;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}

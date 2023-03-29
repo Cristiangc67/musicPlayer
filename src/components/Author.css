@@ -1,0 +1,124 @@
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.Author-container{
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tracks-container{
+    overflow-y: scroll;
+    height: 98%;
+    /* background-color: bisque; */
+    /* position: relative; */
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+
+}
+.tracks-item{
+    height: 10em;
+    background-color: rgb(228, 228, 228);
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 1em auto;
+    align-items: center;
+    padding: 0em 1em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    transition: all 0.4s;
+    justify-content: space-between;
+}
+.tracks-item:hover{
+    box-shadow: 0 0 1em rgb(20, 177, 216);
+}
+.track-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    gap: 0.7em;
+}
+
+.track-text-title{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.3em;
+    color: black;
+}
+.track-text-author{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: rgb(56, 56, 56);
+}
+.like-icon{
+    font-size: 4em;
+    color: rgb(224, 9, 63);
+    transition: all 0.1s ease-in-out;
+}
+.like-icon:active{
+    font-size: 4.5em;
+}
+.clickable-area{
+    display: flex;
+    background-color: aquamarine;
+    width: 98%;
+    height: 100%;
+    align-items: center;
+    margin: 1em 0;
+}
+.author-img{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+.png-image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    filter: opacity(1) contrast(1.1) saturate(1.5) drop-shadow(-1.5em 0.5em 0.8em rgb(32, 32, 32));
+    top: -100%;
+    transform: translateX(0%);
+    transition: all 1s;
+    overflow: hidden;
+}
+.hidden{
+    filter: opacity(0);
+    transform: translateX(100%);
+}
+.image-background{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    filter: blur(1em);
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.spin-tiny{
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+.tracks-item:hover .clickable-area .spin-tiny{
+    /* transition: all 1s ease-in-out; */
+    /* animation-name: spin;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+    transform: rotate(360deg);
+    -webkit-animation-iteration-count: infinite;
+
+
+}

@@ -1,0 +1,24 @@
+.tiny{
+    display: flex;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 18%;
+}
+.tinySide{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5em;
+}
+.tinyImg{
+    height: 8vh;
+    border-radius: 1em;
+}
+.tinyTitle{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.tinyAuthor{
+    font-weight: 400;
+    font-size: 0.9em;
+    color: rgb(155, 155, 155);
+}

@@ -1,0 +1,25 @@
+.audioPlayer{
+    width: 100%;
+    height: 98vh;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bottombar{
+    /* position: relative; */
+    /* margin-top: 38.5vh; */
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+.interface{
+    display: flex; 
+    width: 100%;
+    height: 90%;
+    background-color: aquamarine;
+}

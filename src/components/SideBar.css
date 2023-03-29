@@ -1,0 +1,30 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 70vh;
+    background: rgb(245, 245, 245);
+    justify-content: space-around;
+    align-items: center;
+}
+.sidebar-item{
+    height: 7vh;
+    width: 7vh;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+.sidebar-item:hover{
+    
+    background: rgb(240, 240, 240);
+    box-shadow: 0 0 1em rgb(212, 212, 212);
+}
+.icon{
+    font-size: 2.5em;
+    fill: url(#gradient);
+}
