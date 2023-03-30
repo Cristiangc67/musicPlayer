@@ -38,7 +38,7 @@ const Author = (props)=>{
                 {tracks.map((track, index)=>
                     <div className='tracks-item' key={track.id} >
                       <div className='clickable-area' onClick={()=>trackClicked(index)}>
-                        <img className='spin-tiny' src={`/src/thumbnail/${track.id}.jpg`} alt="" height={100} width={100} />
+                        <img className='spin-tiny' src={`thumbnail/${track.id}.jpg`} alt="" height={100} width={100} />
                         <div className='track-text'>
                             <span className='track-text-title'>{track.title}</span>
                             <span className='track-text-author'>{track.author}</span>
@@ -57,7 +57,7 @@ const Author = (props)=>{
               
               <div className='image-background'></div>
                 <img className='png-image hidden' 
-                src={`/src/backimg/${(props.playing.author).toLowerCase()}.png`} 
+                src={`/backimg/${(props.playing.author)}.png`} 
                 alt="" />
               </div>
         </div>

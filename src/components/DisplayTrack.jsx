@@ -2,7 +2,7 @@ import BigPicture from './BigPicture';
 import Author from './Author';
 import './DisplayTrack.css';
 const DisplayTrack = (props)=>{
-    const thumbnail = `/src/thumbnail/${props.playing.id}.jpg`;
+    const thumbnail = `/thumbnail/${props.playing.id}.jpg`;
 
     const onLoadedMetadata = () => {
         const seconds = props.audioRef.current.duration;
@@ -16,7 +16,7 @@ const DisplayTrack = (props)=>{
     }
     return(
         <div className='display'>
-            <audio src={`/src/music/${props.playing.id}.mp3`} 
+            <audio src={`/music/${props.playing.id}.mp3`} 
                 ref={props.audioRef} 
                 autoPlay 
                 onEnded={props.skipForward}
