@@ -82,7 +82,7 @@ const ProgressBar = (props)=>{
                     <MdVolumeOff className='volumeIcon'/> :
                      <MdVolumeUp className='volumeIcon'/>}
                 </button>
-
+ 
                 <input type="range" 
                 value={volume*100} 
                 onChange={volumeHandler} 

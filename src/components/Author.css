@@ -7,7 +7,9 @@
     }
 }
 .Author-container{
-    background-color: rgb(238, 238, 238);
+    position: relative;
+    z-index: 1;
+    background-color: rgb(245, 245, 245);
     width: 100%;
     height: 100%;
     display: flex;
@@ -16,18 +18,28 @@
 }
 .tracks-container{
     overflow-y: scroll;
-    height: 98%;
+    
+    padding-top: 4em;
+    height: 88.5%;
     /* background-color: bisque; */
     /* position: relative; */
     width: 55%;
     display: flex;
     flex-direction: column;
-    margin: 1em auto;
+    margin: 2em auto 1em auto;
 
 }
+.tracks-container::-webkit-scrollbar{
+    width: 7px ;
+}
+.tracks-container::-webkit-scrollbar-thumb{
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+}
+
 .tracks-item{
     height: 10em;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(245, 245, 245);
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -40,7 +52,8 @@
     justify-content: space-between;
 }
 .tracks-item:hover{
-    box-shadow: 0 0 1em rgb(20, 177, 216);
+    background-color: rgb(230, 230, 230);
+    /* box-shadow: 0 0 1em rgb(0, 0, 0); */
 }
 .track-text{
     width: 60%;
@@ -64,14 +77,9 @@
 .like-icon{
     font-size: 4em;
     color: rgb(224, 9, 63);
-    transition: all 0.1s ease-in-out;
-}
-.like-icon:active{
-    font-size: 4.5em;
 }
 .clickable-area{
     display: flex;
-    background-color: aquamarine;
     width: 98%;
     height: 100%;
     align-items: center;

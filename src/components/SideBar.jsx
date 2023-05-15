@@ -6,7 +6,7 @@ import  './SideBar.css'
 
 const SideBar = ()=>{
     return(
-        <div>
+        <div> 
             
             <div className="sidebar">
                 <button className="sidebar-item">

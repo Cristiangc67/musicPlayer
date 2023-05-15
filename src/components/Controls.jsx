@@ -29,7 +29,7 @@ const autoPlaySkipBack = () =>{
         }
     }
     useEffect(() => {
-        if(props.isPlaying === true) {
+        if(props.isPlaying === true) { 
             props.audioRef.current.play();
         }else{
             props.audioRef.current.pause();

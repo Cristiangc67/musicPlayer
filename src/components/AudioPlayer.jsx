@@ -56,7 +56,7 @@ import './AudioPlayer.css';
             setPlayingIndex={setPlayingIndex}
             isPlaying={isPlaying} 
             setIsPlaying={setIsPlaying}            
-            />
+            /> 
         </div>
         
         <div className='bottombar'>

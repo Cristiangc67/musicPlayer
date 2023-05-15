@@ -9,6 +9,6 @@ const SmallImage = (props)=>{
                 <span className='tinyAuthor'>{props.playing.author}</span>
             </div>
         </div>
-    )
+    ) 
 }
 export default SmallImage;

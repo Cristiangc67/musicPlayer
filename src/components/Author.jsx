@@ -6,7 +6,7 @@ import {MdFavorite} from 'react-icons/md'
 const Author = (props)=>{
     const [likes, setLikes] = useState(
         tracks.map((track) => track.like=false)
-      );
+      ); 
 
       const trackClicked = (index)=>{
         props.setPlayingIndex(index);
@@ -58,6 +58,7 @@ const Author = (props)=>{
               <div className='image-background'></div>
                 <img className='png-image hidden' 
                 src={`/backimg/${(props.playing.author)}.png`} 
+                onError={(e)=> {e.target.src = "/backimg/music.png"}}
                 alt="" />
               </div>
         </div>

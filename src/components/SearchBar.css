@@ -1,0 +1,16 @@
+.search-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+#search-bar{
+    height: 100%;
+    width: 75%;
+    border-radius: 2em;
+    background: rgb(224, 224, 224);
+    font-size: 2em;
+    color: black;
+    border: none;
+}

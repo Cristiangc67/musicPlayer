@@ -1,5 +1,6 @@
 import BigPicture from './BigPicture';
 import Author from './Author';
+import SearchBar from './SearchBar';
 import './DisplayTrack.css';
 const DisplayTrack = (props)=>{
     const thumbnail = `/thumbnail/${props.playing.id}.jpg`;
@@ -23,13 +24,17 @@ const DisplayTrack = (props)=>{
                 onLoadedMetadata={onLoadedMetadata}
                 onTimeUpdate={handleTimeUpdate}
             />
-            
-            <Author playing={props.playing} 
-            setPlaying={props.setPlaying}
-            setPlayingIndex={props.setPlayingIndex}
-            setIsPlaying={props.setIsPlaying}
-            audioRef={props.audioRef}
-            />
+            <section className='display-main'>
+                <div className='search'>
+                    <SearchBar/>
+                </div>
+                <Author playing={props.playing} 
+                setPlaying={props.setPlaying} 
+                setPlayingIndex={props.setPlayingIndex}
+                setIsPlaying={props.setIsPlaying}
+                audioRef={props.audioRef}
+                />
+            </section>
             
         </div>
     )

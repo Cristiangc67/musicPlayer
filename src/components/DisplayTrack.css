@@ -4,6 +4,14 @@
     display: flex;
     justify-content: center;
 }
-.display-inner{
-    text-align: center;
+.display-main{
+    width: 100%;
+}
+.search{
+    /* background: red; */
+    z-index: 2;
+    position: fixed;
+    top: 2em;
+    width: 50%;
+    height: 4.5%;
 }
